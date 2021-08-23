@@ -1,0 +1,22 @@
+{
+  "name": "tp1_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@azure/cognitiveservices-customvision-prediction": "^5.1.2",
+    "@azure/cognitiveservices-customvision-training": "^5.2.0",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "image-size": "^1.0.0",
+    "nodemon": "^2.0.12",
+    "probe-image-size": "^7.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Diego Kraenau",
+  "license": "ISC"
+}
