@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const axios = require("axios").default;
 const probe = require("probe-image-size");
+const { testDownload } = require("./index_download");
 
 //Helpers
 const headers = {
@@ -140,6 +141,8 @@ const test = async (req, res) => {
 
 //Config
 app.get("/", test);
+
+app.post("/download", testDownload);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
